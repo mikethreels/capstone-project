@@ -1,39 +1,33 @@
-@font-face {
-  font-family: "Helvetica Neue";
-  font-display: swap;
-  src: local("helvetica_neue"), url(../fonts/HelveticaNeue-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
+html {
+  color: #888888;
 }
-@font-face {
-  font-family: "Helvetica Neue Light";
-  font-display: swap;
-  src: local("helvetica_neue_light"), url(../fonts/HelveticaNeue-Light.otf) format("opentype");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Helvetica Neue Bold";
-  font-display: swap;
-  src: local("helvetica_neue_bold"), url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
-  font-weight: 700;
-  font-style: bold;
-}
-@font-face {
-  font-family: "Bold";
-  src: url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
-}
+
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #000;
   height: 40px;
   color: #888888;
-  font-family: "helvetica_neue_bold", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
+  max-width: 100%;
+}
+
+main {
+  background-color: goldenrod;
+  height: 10000px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+header {
+  max-width: 100%;
+  height: 45px;
+  justify-content: flex-end;
 }
 
 .navbar {
@@ -58,6 +52,87 @@ nav button {
   border: none;
   border-radius: 3px;
   padding: 5px;
+  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.name-container {
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
+}
+.name-container img {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.search-container {
+  align-items: center;
+  padding-top: 25px;
+  flex-direction: column;
+}
+.search-container * {
+  margin-bottom: 10px;
+  max-width: 35vw;
+  min-width: 35vw;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "helvetica-light", Arial, Helvetica, sans-serif;
+}
+
+.header-drop-down,
+.header-input-text {
+  border: none;
+  margin-right: 1px;
+  color: #888888;
+}
+
+.submit-button {
+  background-color: #383838;
+  color: #888888;
+}
+
+/*test*/
+#topnav {
+  width: 100%;
+}
+
+#topnav #myLinks {
+  display: block;
+  background: #d35266 url(../images/header-background-logo.PNG);
+  background-size: 500px;
+  background-position: -112px 7px;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+#topnav a {
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  width: 45px;
+  height: 40px;
+}
+
+#topnav a.icon {
+  background: #d35266;
+  display: block;
+  font-size: 20px;
+}
+
+#collaps {
+  transform: rotate(180deg);
+  padding-bottom: 12px;
 }
 
 /* helper */

@@ -5,11 +5,13 @@
         <meta name="viewport" content="initial-scale=1.0"/>
         <title></title>
         <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="styles/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script type="text/javascript" src="scripts/script.js"></script>
     </head>
-    <body>
+    <body id="body">
         <nav>
             <div class="nav-logo"><a href="#"><img src="images/navbar-logo.PNG" alt=""></a></div>
             <ul class="flex navbar">
@@ -20,8 +22,73 @@
             </ul>
         </nav>
 
-        <header>
-            
+        <header class="flex">
+            <div id="topnav">
+                <!-- <a href="#home" class="active">Logo</a> -->
+                <div id="myLinks">
+                    <div class="name-container flex">
+                        <img src="images/website-name.PNG" alt="Mottox">
+                        <h1>Buying Motorcycle Parts couldn't be simpler than this!</h1>
+                    </div>
+                    <div>
+                        <form class="flex search-container" action="search.html">
+                            <select class="header-drop-down" name="category-selector" id="category">
+                                <option value="all-categories" selected>&nbsp; All Categories</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="engine-parts">Engine Parts</option>
+                                <option value="liquids">Liquids</option>
+                                <option value="wheels">Wheels</option>
+                            </select>
+                            <input class="header-input-text" type="text" placeholder="&nbsp; What are you searching for?">
+                            <input class="header-input-text" type="text" placeholder="&nbsp; Location">
+                            <input class="submit-button" type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" onscroll="scrollFunction">
+                    <i id="collaps" class="fas fa-caret-down"></i>
+                </a>
+            </div>
+
+            <script>
+                function scrollFunction() {
+                        document.getElementById("myLinks").style.display = "none";
+                }
+            </script>
+            <!-- <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    var y = document.getElementById("topnav")
+                    if (x.style.display === "block") {
+                    x.style.display = "none";
+                    x.style.height = "auto";
+                    y.style.width = "45px";
+                    } else {
+                    x.style.display = "block";
+                    x.style.height = "50vh";
+                    y.style.width = "100%";
+                    }
+                }
+            </script>
+     -->
+            <!-- <div class="name-container flex">
+                <img src="images/website-name.PNG" alt="Mottox">
+                <span>Buying Motorcycle Parts couldn't be simpler than this!</span>            
+            </div>
+            <div>
+                <form class="flex search-container" action="search.html">
+                    <select class="header-drop-down" name="category-selector" id="category">
+                        <option value="all-categories" selected>All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="engine-parts">Engine Parts</option>
+                        <option value="liquids">Liquids</option>
+                        <option value="wheels">Wheels</option>
+                    </select>
+                    <input class="header-input-text" type="text" placeholder="What do you search for">
+                    <input class="header-input-text" type="text" placeholder="Location">
+                    <input class="submit-button" type="submit" value="Search">
+                </form>
+            </div>            -->
         </header>
         <main>
 
