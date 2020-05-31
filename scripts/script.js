@@ -17,13 +17,8 @@ function myFunction() {
     }
   }
 
-// function scrollFunction() {
-//     var x = document.getElementById("myLinks");
-//         x.style.display = "none";
-// }
-
-document.getElementById("body").addEventListener("scroll", scrollFunction);
+window.addEventListener("scroll", myFunction);
 
 function myFunction() {
-  document.getElementById("myLinks").style.display = "none";
+    document.getElementById("myLinks").style.display = "none";
 }
