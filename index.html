@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="styles/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material<b>+</b>Icons">
         <script type="text/javascript" src="scripts/script.js"></script>
     </head>
     <body id="body">
@@ -18,13 +18,18 @@
                 <li class="nav-leaf"><a href="#"><i class="fas fa-home"></i>&nbsp; Home</a></li>
                 <li class="nav-leaf"><a href="#"><i class="fas fa-box"></i>&nbsp; Collections</a></li>
                 <li class="nav-leaf"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp; Purchase List</a></li>
-                <!-- <li class="nav-leaf"><button type="button">post an add</button></li> -->
+                <li class="extra-leaf"><button type="button">post an add</button></li>
             </ul>
+            <div class="nav-small-list-container">
+                <ul class="flex nav-small-list">
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li class="user-name"><a href="#">John Doe</a></li>
+                </ul>
+            </div>
         </nav>
 
         <header class="flex">
             <div id="topnav">
-                <!-- <a href="#home" class="active">Logo</a> -->
                 <div id="myLinks">
                     <div class="name-container flex">
                         <img src="images/website-name.PNG" alt="Mottox">
@@ -33,7 +38,7 @@
                     <div>
                         <form class="flex search-container" action="search.html">
                             <select class="header-drop-down" name="category-selector" id="category">
-                                <option value="all-categories" selected>&nbsp; All Categories</option>
+                                <option value="all-categories" selected>All Categories</option>
                                 <option value="electronics">Electronics</option>
                                 <option value="engine-parts">Engine Parts</option>
                                 <option value="liquids">Liquids</option>
@@ -75,177 +80,321 @@
                         </div>
                     </div>
             </section>
+            <div class="section-header flex">
+                <h2><i class="fas fa-bolt"></i> Electronics</h2>
+                <p>{spark plugs, lights, dynamo's and navigation)</p>
+            </div>
             <section class="product-section">
-                <div class="section-header">
-                    <h2><i class="fas fa-bolt"></i> Electronics</h2>
-                    <p>spark plugs, lights, dynamo's and navigation </p>
+                <div class="product">
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
             </section>
+            <div class="section-header flex">
+                <h2><i class="fas fa-bolt"></i> Engine Parts</h2>
+                <p>{spark plugs, lights, dynamo's and navigation)</p>
+            </div>
             <section class="product-section">
-                <div class="section-header">
-                    <h2><i class="fas fa-bolt"></i> Electronics</h2>
-                    <p>spark plugs, lights, dynamo's and navigation </p>
+                <div class="product">
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
             </section>
+            <div class="section-header flex">
+                <h2><i class="fas fa-bolt"></i> Liquids</h2>
+                <p>{spark plugs, lights, dynamo's and navigation)</p>
+            </div>
             <section class="product-section">
-                <div class="section-header">
-                    <h2><i class="fas fa-bolt"></i> Electronics</h2>
-                    <p>spark plugs, lights, dynamo's and navigation </p>
+                <div class="product">
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
             </section>
+            <div class="section-header flex">
+                <h2><i class="fas fa-bolt"></i> Wheels</h2>
+                <p>{spark plugs, lights, dynamo's and navigation)</p>
+            </div>
             <section class="product-section">
-                <div class="section-header">
-                    <h2><i class="fas fa-bolt"></i> Electronics</h2>
-                    <p>spark plugs, lights, dynamo's and navigation </p>
+                <div class="product">
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b><b>+</b></b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="images/spark-plug.jfif" alt="spark plug">
-                    <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                    <p><b>From</b> San Fransisco California</p>
-                    <div class="product-price flex">
-                        <button type="button">+</button>
-                        <p>$25</p>
-                    </div>
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jfif" alt="spark plug">
+                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
+                        <p class="product-state">New</p>
+                        <p class="product-location"><b>From</b> San Fransisco California</p>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price"><a href="#">$25</a></p>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>
         <footer>
-
+            <div>
+                <div class="website-description flex">
+                    <img src="images/footer-logo.PNG" alt="logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                </div>
+                <div class="footer-categories">
+                    <h4>Categories</h4>
+                    <div class="footer-category-lists">
+                        <ul>
+                            <li><a href="#">Rims</a></li>
+                            <li><a href="#">Tires</a></li>
+                            <li><a href="#">Lights</a></li>
+                            <li><a href="#">Oils</a></li>
+                            <li><a href="#">Handle-bars</a></li>
+                            <li><a href="#">Chains</a></li>
+                            <li><a href="#">Breaks</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Exhausts</a></li>
+                            <li><a href="#">Mirrors</a></li>
+                            <li><a href="#">Shock Absorbers</a></li>
+                            <li><a href="#">Windscreens</a></li>
+                            <li><a href="#">Seats</a></li>
+                            <li><a href="#">Pegs</a></li>
+                            <li><a href="#">Protection</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-navigation">
+                    <h4>Navigation</h4>
+                    <div class="footer-navigation-lists">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="parameter-container">
+                    <div class="parameter flex">
+                        <h4>Country</h4>
+                        <select class="footer-drop-down" name="country-selector">
+                            <option value="Zwitserland" selected>Zwitserland</option>
+                            <option value="Spain">Spain</option>
+                            <option value="United-Kingdom">United-Kingdom</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                        </select>
+                    </div>
+                    <div class="parameter flex">
+                        <h4>Language</h4>
+                        <select class="footer-drop-down flex" name="Language-selector">
+                            <option value="English" selected>English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="German">German</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                    <div class="parameter flex">
+                        <h4>Currency</h4>
+                        <select class="footer-drop-down" name="Currency-selector">
+                            <option value="Dollar" selected>US Dollar</option>
+                            <option value="Euro">Euro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="copyright-text flex">
+                        <p>
+                            Copyright© 2015 Zattix.com. All Rights Reserved. Designed by
+                            Mohammed Awad.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="copyright-links flex">
+                          <li>
+                            <a href="#"><i class="fab fa-yahoo"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

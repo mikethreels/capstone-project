@@ -15,7 +15,7 @@ nav {
     background-color: #000;
     height: 40px;
     color: $text-color;
-    font-family: $bold-font;
+    font-family: $normal-font;
     max-width: 100%;
     font-size: 10px;
 }
@@ -29,6 +29,10 @@ header {
   max-width: 100%;
   height: 40px;
   justify-content: flex-end;
+}
+
+footer {
+  border-top: 1px solid $text-color;
 }
 
 
@@ -56,6 +60,17 @@ nav button {
   padding: 5px;
   font-family: $bold-font;
   color: #fff;
+}
+
+.nav-small-list {
+  position: absolute;
+  right: 50px;
+  top: 12px;
+}
+
+.user-name {
+  color: #fff;
+  margin-left: 20px;
 }
 
 .name-container {
@@ -88,6 +103,7 @@ nav button {
   border: none;
   margin-right: 1px;
   color: $text-color;
+  background-color: #fff;
 }
 
 .submit-button {
@@ -140,6 +156,7 @@ nav button {
 .hot-ads-header {
   font-family: $normal-font;
   margin-left: 5vw;
+  text-transform: uppercase;
 }
 
 .slider {
@@ -183,28 +200,235 @@ nav button {
 }
 
 .product-section {
+  background-color: #f0f0f0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 10px;
-  padding: 10px 20px;
+  padding: 25px 20px 10px 20px;
+  font-family: $normal-font;
+  color: $text-color;
+  font-size: 12px;
 }
 
 .product{
   padding: 15px;
-  border: 1px solid #999999;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
   img{
     max-width: 100%;
+    align-self: center;
   }
+  a {
+    flex-direction: column;
+  }
+
+}
+
+.product-state {
+  color: $website-color;
+  padding: 5px 0;
+  font-family: $bold-font;
+}
+
+.product-location {
+  font-size: 10px;
+  padding-bottom: 5px;
 }
 
 .section-header {
   grid-column: 1 / -1;
+  align-items: center;
+  padding: 0 20px 5px 20px;
+  border-bottom: 1px solid #cccccc;
+  background-color: #f0f0f0;
+  h2 {
+    font-family: $bold-font;
+    font-size: 17px;
+    margin-right: 5px;
+  }
+  p {
+    font-size: 12px;
+    color: $text-color;
+  }
+}
+
+.product-price-section {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-family: $bold-font;
+  button {
+    font-size: 15px;
+  }
 }
 
 .product-price {
-  justify-content: space-between;
+  color: $website-color;
 }
+
+.website-description {
+  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $normal-font;
+  font-size: 10px;
+  color: $text-color;
+  img {
+    max-width: 50%;
+    margin-bottom: 15px;
+  }
+  p {
+    max-width: 70%;
+  }
+}
+
+.footer-categories,
+.footer-navigation {
+  font-family: $bold-font;
+  color: $text-color;
+  font-size: 15px;
+  margin: 0 15px;
+  h4 {
+    color: $website-color;
+    font-size: 20px;
+    border-bottom: 2px solid $website-color;
+    padding: 3px 0;
+  }
+}
+
+.footer-category-lists {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  padding: 10px 0;
+}
+
+.footer-navigation-lists {
+  padding: 10px 0;
+}
+
+.footer-drop-down {
+  -webkit-appearance: none;
+  background-color: #fff;
+  text-align-last: center;
+  -moz-text-align-last: center;
+  -ms-text-align-last: center;
+  width: 40vw;
+  font-family: $bold-font;
+  font-size: 20px;
+}
+
+.parameter-container {
+  margin: 0 15px 15px 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $text-color;
+}
+
+.parameter{
+  margin: 10px 0;
+  justify-content: space-between;
+  font-family: $bold-font;
+  font-size: 20px;
+  h4 {
+    color: $website-color;
+  }
+}
+
+.bottom-footer {
+  margin: 0 15px;
+}
+
+.copyright-text{
+  font-family: $light-font;
+  color: $text-color;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+  p {
+    max-width: 70vw;
+  }
+}
+
+.copyright-links {
+  justify-content: center;
+  color: $text-color;
+  font-size: 30px;
+  li {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+   .extra-leaf,
+   .nav-small-list-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    font-size: 16px;
+  }
+  .search-container {
+    justify-content: center;
+    padding-top: 95px;
+    flex-direction: row;
+    *{
+      margin-bottom: 10px;
+      max-width: 20vw;
+      min-width: 20vw;
+      height: 30px;
+      border-radius: 5px;
+      font-family: $light-font;
+    }
+  }
+  .slider img {
+    width: 200px;
+  }
+
+  .ad-info {
+    div{
+      padding: 8px 0;
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+
+  .product-section {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .product {
+    border-radius: 15px;
+    border: 1px solid #383838;
+  }
+
+  .hot-ads-header {
+    font-size: 20px;
+  }
+
+  .section-header {
+    margin-top: 30px;
+    h2{
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .product a {
+    h3 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 14px
+    }
+  }
+}
+
 
 /* helper */
 .flex {display: flex;}
