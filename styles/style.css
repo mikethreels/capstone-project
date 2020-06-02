@@ -329,6 +329,7 @@ nav button {
 }
 
 .bottom-footer {
+  flex-direction: column;
   margin: 0 15px;
 }
 
@@ -424,6 +425,40 @@ nav button {
   }
   .product-price-section button {
     font-size: 20px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .footer-navigation {
+    font-size: 13px;
+  }
+
+  .parameter {
+    font-size: 17px;
+  }
+
+  .footer-drop-down {
+    width: 11vw;
+    font-size: 17px;
+  }
+
+  .parameter-container {
+    border: none;
+  }
+
+  .bottom-footer {
+    grid-column: span 4;
+    flex-direction: row;
+    border-top: 1px solid #888888;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright-text {
+    font-size: 14px;
   }
 }
 /* helper */
