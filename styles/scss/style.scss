@@ -18,6 +18,7 @@ nav {
     font-family: $normal-font;
     max-width: 100%;
     font-size: 10px;
+    z-index: 1;
 }
   
 a {
@@ -83,7 +84,9 @@ nav button {
     padding-bottom: 10px;
   }
 }
- 
+
+
+
 .search-container {
   align-items: center;
   padding-top: 25px;
@@ -146,6 +149,7 @@ nav button {
   background: $website-color;
   display: block;
   font-size: 20px;
+  z-index: 2;
 }
 
 #collaps {
@@ -168,9 +172,43 @@ nav button {
 }
 
 #hot-ads {
-  margin-top: 66vh;
+  margin-top: 75vh;
+}
+
+.hot-ads-container {
   color: $text-color;
   padding: 0 25px;
+}
+
+.filter-container{
+  padding: 0 10px;
+  border-bottom: 1px solid $text-color;
+}
+
+.filter-section {
+  font-family: $light-font;
+  padding-bottom: 15px;
+}
+
+.brand-filter h3,
+.price-filter h3,
+.delivery-filter h3 {
+  font-family: $bold-font;
+  font-size: 15px;
+  border-bottom: 1px solid $text-color;
+  margin: 10px 0;
+}
+
+.new-checkbox-container {
+  margin-right: 5px;
+}
+
+.result-count {
+  font-family: $normal-font;
+  font-size: 10px;
+  color: $text-color;
+  padding: 15px;
+  border-bottom: 1px solid $text-color;
 }
 
 .ad-info {
@@ -210,6 +248,14 @@ nav button {
   font-size: 12px;
 }
 
+.product-result-section {
+  background-color: #f0f0f0;
+  padding: 25px 20px 10px 20px;
+  font-family: $normal-font;
+  color: $text-color;
+  font-size: 12px;
+}
+
 .product{
   padding: 15px;
   background-color: #fff;
@@ -221,7 +267,20 @@ nav button {
   a {
     flex-direction: column;
   }
+}
 
+.product-result{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  img{
+    max-width: 100%;
+    align-self: center;
+  }
+  a {
+    flex-direction: column;
+  }
 }
 
 .product-state {
@@ -230,7 +289,8 @@ nav button {
   font-family: $bold-font;
 }
 
-.product-location {
+.product-location,
+.product-description {
   font-size: 10px;
   padding-bottom: 5px;
 }
@@ -468,6 +528,20 @@ nav button {
    
   .copyright-text {
     font-size: 14px;
+  }
+
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .filter-container {
+    padding: 40px 10px;
+  }
+
+  .filter-section {
+    position: sticky;
+    top: 50px;
   }
 
 }

@@ -13,6 +13,7 @@ nav {
   font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
   max-width: 100%;
   font-size: 10px;
+  z-index: 1;
 }
 
 a {
@@ -140,6 +141,7 @@ nav button {
   background: #d35266;
   display: block;
   font-size: 20px;
+  z-index: 2;
 }
 
 #collaps {
@@ -162,9 +164,43 @@ nav button {
 }
 
 #hot-ads {
-  margin-top: 66vh;
+  margin-top: 75vh;
+}
+
+.hot-ads-container {
   color: #888888;
   padding: 0 25px;
+}
+
+.filter-container {
+  padding: 0 10px;
+  border-bottom: 1px solid #888888;
+}
+
+.filter-section {
+  font-family: "helvetica-light", Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+}
+
+.brand-filter h3,
+.price-filter h3,
+.delivery-filter h3 {
+  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #888888;
+  margin: 10px 0;
+}
+
+.new-checkbox-container {
+  margin-right: 5px;
+}
+
+.result-count {
+  font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #888888;
+  padding: 15px;
+  border-bottom: 1px solid #888888;
 }
 
 .ad-info {
@@ -204,6 +240,14 @@ nav button {
   font-size: 12px;
 }
 
+.product-result-section {
+  background-color: #f0f0f0;
+  padding: 25px 20px 10px 20px;
+  font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
+  color: #888888;
+  font-size: 12px;
+}
+
 .product {
   padding: 15px;
   background-color: #fff;
@@ -217,13 +261,28 @@ nav button {
   flex-direction: column;
 }
 
+.product-result {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.product-result img {
+  max-width: 100%;
+  align-self: center;
+}
+.product-result a {
+  flex-direction: column;
+}
+
 .product-state {
   color: #d35266;
   padding: 5px 0;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
-.product-location {
+.product-location,
+.product-description {
   font-size: 10px;
   padding-bottom: 5px;
 }
@@ -459,6 +518,20 @@ nav button {
 
   .copyright-text {
     font-size: 14px;
+  }
+
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .filter-container {
+    padding: 40px 10px;
+  }
+
+  .filter-section {
+    position: sticky;
+    top: 50px;
   }
 }
 /* helper */

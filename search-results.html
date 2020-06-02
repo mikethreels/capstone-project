@@ -15,7 +15,7 @@
         <nav>
             <div class="nav-logo"><a href="#"><img src="images/navbar-logo.PNG" alt=""></a></div>
             <ul class="flex navbar">
-                <li class="nav-leaf"><a href="#"><i class="fas fa-home"></i>&nbsp; Home</a></li>
+                <li class="nav-leaf"><a href="index.html"><i class="fas fa-home"></i>&nbsp; Home</a></li>
                 <li class="nav-leaf"><a href="#"><i class="fas fa-box"></i>&nbsp; Collections</a></li>
                 <li class="nav-leaf"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp; Purchase List</a></li>
                 <li class="extra-leaf"><button type="button">post an add</button></li>
@@ -33,19 +33,19 @@
                 <div id="myLinks">
                     <div class="name-container flex">
                         <img src="images/website-name.PNG" alt="Mottox">
-                        <h1>Buying Motorcycle Parts couldn't be simpler than this!</h1>
+                        <h1>Search around 150,000 articles waiting to be bought!</h1>
                     </div>
                     <div>
                         <form class="flex search-container" action="search-results.html">
                             <select class="header-drop-down" name="category-selector" id="category">
-                                <option value="all-categories" selected>All Categories</option>
-                                <option value="electronics">Electronics</option>
+                                <option value="all-categories">All Categories</option>
+                                <option value="electronics" selected>Electronics</option>
                                 <option value="engine-parts">Engine Parts</option>
                                 <option value="liquids">Liquids</option>
                                 <option value="wheels">Wheels</option>
                             </select>
-                            <input class="header-input-text" type="text" placeholder="&nbsp; What are you searching for?">
-                            <input class="header-input-text" type="text" placeholder="&nbsp; Location">
+                            <input class="header-input-text" type="text" placeholder="&nbsp; Sparkplug">
+                            <input class="header-input-text" type="text" placeholder="&nbsp; Germany">
                             <input class="submit-button" type="submit" value="Search">
                         </form>
                     </div>
@@ -55,149 +55,88 @@
                 </a>
             </div>
         </header>
-        <main id="hot-ads">
-            <section class="hot-ads-container">
-                    <div class="hot-ads-header">
-                        <h2>hot ads</h2>
-                    </div>
-                    <div class="slider">
-                        <div class="slider-content-container flex">                    
-                            <img src="images/ads-img.jfif" alt="wheel">
-                            <div class="ad-info" >
-                                <h3>Motercycle Supermoto Rims</h3>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
-                                </div>
-                                <div>
-                                    <p><b>By</b> John Doe</p>
-                                    <p><b>Location</b> San Fransisco California</p>    
-                                </div>
-                                <div class="flex ad-info-buttons">
-                                    <button type="button">$450</button>
-                                    <button type="button"><i class="fas fa-shopping-cart"></i>Purchase details</button>
-                                </div>             
+        <main class="filter-grid" id="hot-ads">
+            <section  class="filter-container">
+                <div class="filter-section">
+                    <div class="state-filter">
+                        <form action="filter" class="state-checkbox-filter flex">
+                            <div class="new-checkbox-container">
+                                <input type="checkbox" class="new-checkbox" id="new">
+                                <label class="new-checkbox" for="new">New</label>
                             </div>
-                        </div>
+                            <div class="used-checkbox-container">
+                                <input type="checkbox" class="used-checkbox" id="used">
+                                <label class="used-checkbox" for="used">Used</label>
+                            </div>
+                        </form>
                     </div>
-            </section>
-            <div class="section-header flex">
-                <h2><i class="fas fa-bolt"></i> Electronics</h2>
-                <p>{spark plugs, lights, dynamo's and navigation)</p>
-            </div>
-            <section class="product-section">
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <div class="section-header flex">
-                <h2><i class="fas fa-bolt"></i> Engine Parts</h2>
-                <p>{spark plugs, lights, dynamo's and navigation)</p>
-            </div>
-            <section class="product-section">
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
+                    <div class="brand-filter">
+                        <h3>Brand</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="ngk-checkbox-container">
+                                <input type="checkbox" class="ngk-checkbox" id="ngk">
+                                <label class="ngk-checkbox" for="ngk">NGK</label>
+                            </div>
+                            <div class="bosch-checkbox-container">
+                                <input type="checkbox" class="bosch-checkbox" id="bosch">
+                                <label class="bosch-checkbox" for="bosch">Bosch</label>
+                            </div>
+                            <div class="denso-checkbox-container">
+                                <input type="checkbox" class="denso-checkbox" id="denso">
+                                <label class="denso-checkbox" for="denso">Denso</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="price-filter">
+                        <h3>Price Range</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="ten-checkbox-container">
+                                <input type="checkbox" class="ten-checkbox" id="ten">
+                                <label class="ten-checkbox" for="ten">10$ - 20$</label>
+                            </div>
+                            <div class="twenty-checkbox-container">
+                                <input type="checkbox" class="twenty-checkbox" id="twenty">
+                                <label class="bosch-checkbox" for="twenty">20$ - 30$</label>
+                            </div>
+                            <div class="thirdy-checkbox-container">
+                                <input type="checkbox" class="thirdy-checkbox" id="thirdy">
+                                <label class="thirdy-checkbox" for="thirdy">30$ - 40$</label>
+                            </div>
+                            <div class="forty-checkbox-container">
+                                <input type="checkbox" class="forty-checkbox" id="forty">
+                                <label class="forty-checkbox" for="forty">40$+</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="delivery-filter">
+                        <h3>Delivery Method</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="courier-checkbox-container">
+                                <input type="checkbox" class="courier-checkbox" id="courier">
+                                <label class="courier-checkbox" for="courier">Courier</label>
+                            </div>
+                            <div class="mail-checkbox-container">
+                                <input type="checkbox" class="mail-checkbox" id="mail">
+                                <label class="mail-checkbox" for="mail">Mail</label>
+                            </div>
+                            <div class="pickup-checkbox-container">
+                                <input type="checkbox" class="pickup-checkbox" id="pickup">
+                                <label class="pickup-checkbox" for="pickup">Pick-up</label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
-            <div class="section-header flex">
-                <h2><i class="fas fa-bolt"></i> Liquids</h2>
-                <p>{spark plugs, lights, dynamo's and navigation)</p>
-            </div>
-            <section class="product-section">
-                <div class="product">
+            <section class="product-result-section">
+                <div class="result-count">
+                    <span><b>5</b> results for <b>"Sparkplug"</b> search in <b>France</b> in the Category <b>Electronics</b></span>
+                </div>
+                <div class="product-result">
                     <a class="flex" href="#">
                         <img src="images/spark-plug.jfif" alt="spark plug">
                         <h3>CR10EK Ngk Yamaha YZF-R6</h3>
                         <p class="product-state">New</p>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
                         <p class="product-location"><b>From</b> San Fransisco California</p>
                         <div class="product-price-section flex">
                             <button type="button"><b>+</b></button>
@@ -205,11 +144,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-result">
                     <a class="flex" href="#">
                         <img src="images/spark-plug.jfif" alt="spark plug">
                         <h3>CR10EK Ngk Yamaha YZF-R6</h3>
                         <p class="product-state">New</p>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
                         <p class="product-location"><b>From</b> San Fransisco California</p>
                         <div class="product-price-section flex">
                             <button type="button"><b>+</b></button>
@@ -217,11 +157,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-result">
                     <a class="flex" href="#">
                         <img src="images/spark-plug.jfif" alt="spark plug">
                         <h3>CR10EK Ngk Yamaha YZF-R6</h3>
                         <p class="product-state">New</p>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
                         <p class="product-location"><b>From</b> San Fransisco California</p>
                         <div class="product-price-section flex">
                             <button type="button"><b>+</b></button>
@@ -229,11 +170,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-result">
                     <a class="flex" href="#">
                         <img src="images/spark-plug.jfif" alt="spark plug">
                         <h3>CR10EK Ngk Yamaha YZF-R6</h3>
                         <p class="product-state">New</p>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
                         <p class="product-location"><b>From</b> San Fransisco California</p>
                         <div class="product-price-section flex">
                             <button type="button"><b>+</b></button>
@@ -241,53 +183,12 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <div class="section-header flex">
-                <h2><i class="fas fa-bolt"></i> Wheels</h2>
-                <p>{spark plugs, lights, dynamo's and navigation)</p>
-            </div>
-            <section class="product-section">
-                <div class="product">
+                <div class="product-result">
                     <a class="flex" href="#">
                         <img src="images/spark-plug.jfif" alt="spark plug">
                         <h3>CR10EK Ngk Yamaha YZF-R6</h3>
                         <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b>+</b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
-                        <p class="product-location"><b>From</b> San Fransisco California</p>
-                        <div class="product-price-section flex">
-                            <button type="button"><b><b>+</b></b></button>
-                            <p class="product-price"><a href="#">$25</a></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product">
-                    <a class="flex" href="#">
-                        <img src="images/spark-plug.jfif" alt="spark plug">
-                        <h3>CR10EK Ngk Yamaha YZF-R6</h3>
-                        <p class="product-state">New</p>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
                         <p class="product-location"><b>From</b> San Fransisco California</p>
                         <div class="product-price-section flex">
                             <button type="button"><b>+</b></button>
