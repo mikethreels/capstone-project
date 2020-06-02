@@ -161,6 +161,7 @@ nav button {
   font-family: $normal-font;
   margin-left: 5vw;
   text-transform: uppercase;
+  color: $text-color;
 }
 
 .slider {
@@ -545,7 +546,6 @@ nav button {
   }
 
 }
-
 
 /* helper */
 .flex {display: flex;}
