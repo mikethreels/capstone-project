@@ -271,7 +271,8 @@ nav button {
   margin-bottom: 10px;
 }
 .product-result img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
   align-self: center;
 }
 .product-result a {
