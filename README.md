@@ -1,6 +1,6 @@
 # capstone-project
 
-Online Shop: HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [Newweek](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
+Online Shop: HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
 
 ![screenshot](./images/app-screenshot.png)
 
@@ -8,11 +8,14 @@ Online Shop: HTML & CSS Capstone Project is based on an online shop for electron
 
 ## Built With
 
-- HTML, CSS
+- HTML
+- CSS
+- SCSS
+- Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://mikethreels.github.io/newsweek-bootstrap/)
+[Live Demo Link](https://mikethreels.github.io/capstone-project/)
 
 ## Getting Started
 
