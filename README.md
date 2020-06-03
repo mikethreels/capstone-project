@@ -1,8 +1,10 @@
 # capstone-project
 
+Online Shop: HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [Newweek](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
+
 ![screenshot](./images/app-screenshot.png)
 
-Clone of the website [Newweek](https://www.newsweek.com/)
+
 
 ## Built With
 
@@ -16,7 +18,7 @@ Clone of the website [Newweek](https://www.newsweek.com/)
 
 To get a local copy up and running follow these simple example steps.
 
-git clone https://github.com/mikethreels/newsweek-bootstrap
+git clone https://github.com/mikethreels/capstone-project
 Open the index.html with your favorite browser
 Explore the website
 
