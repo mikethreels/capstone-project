@@ -1,29 +1,61 @@
-$text-color: #888888;
+@font-face {
+  font-family: "helvetica-neue";
+  font-display: swap;
+  src:
+    local("helvetica_neue"),
+    url(../styles/fonts/HelveticaNeue-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica-light";
+  font-display: swap;
+  src:
+    local("helvetica_neue_light"),
+    url(../styles/fonts/HelveticaNeue-Light.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica-bold";
+  font-display: swap;
+  src:
+    local("helvetica_neue_bold"),
+    url(../styles/fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: bold;
+}
+
+$text-color: #888;
 $nav-color: #383838;
 $website-color: #d35266;
 $normal-font: "helvetica-neue", Arial, Helvetica, sans-serif;
 $light-font: "helvetica-light", Arial, Helvetica, sans-serif;
 $bold-font: "helvetica-bold", Arial, Helvetica, sans-serif;
+
 html {
   color: $text-color;
 }
+
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    height: 40px;
-    color: $text-color;
-    font-family: $normal-font;
-    max-width: 100%;
-    font-size: 10px;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 40px;
+  color: $text-color;
+  font-family: $normal-font;
+  max-width: 100%;
+  font-size: 10px;
+  z-index: 1;
 }
-  
+
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 header {
@@ -36,27 +68,21 @@ footer {
   border-top: 1px solid $text-color;
 }
 
-
 .navbar {
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    margin: 0 20vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0 20vw;
 }
 
 .nav-logo {
-    width: 80px;
-    position: absolute;
-    top: 12px;
-    left: 5px;
-    img{
-        max-width: 100%;
-    }
-}
+  width: 80px;
+  position: absolute;
+  top: 12px;
+  left: 5px;
 
-.nav-leaf {
-  a:hover {
-    color: $website-color;
+  img {
+    max-width: 100%;
   }
 }
 
@@ -89,19 +115,19 @@ nav button {
   align-items: center;
   color: #fff;
   font-family: $normal-font;
+
   img {
     padding-top: 45px;
     padding-bottom: 10px;
   }
 }
 
-
-
 .search-container {
   align-items: center;
   padding-top: 25px;
   flex-direction: column;
-  *{
+
+  * {
     margin-bottom: 10px;
     max-width: 80vw;
     min-width: 80vw;
@@ -143,19 +169,6 @@ nav button {
   z-index: 1;
 }
 
-#topnav a {
-  text-align: center;
-  position: fixed;
-  top: 0px;
-  right: 0;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  width: 45px;
-  height: 40px;
-}
-
 #topnav a.icon {
   background: $website-color;
   display: block;
@@ -177,6 +190,7 @@ nav button {
 
 .slider {
   max-width: 100%;
+
   img {
     width: 150px;
     margin-right: 15px;
@@ -193,7 +207,7 @@ nav button {
   margin: 0 0 30px 0;
 }
 
-.filter-container{
+.filter-container {
   padding: 0 10px;
   border-bottom: 1px solid $text-color;
 }
@@ -227,11 +241,13 @@ nav button {
 .ad-info {
   max-width: 70%;
   font-family: $light-font;
+
   h3 {
     color: $website-color;
     font-family: $bold-font;
     padding: 5px 0;
   }
+
   div {
     padding: 5px 0;
     font-size: 10px;
@@ -269,29 +285,33 @@ nav button {
   font-size: 12px;
 }
 
-.product{
+.product {
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
-  img{
+
+  img {
     max-width: 100%;
     align-self: center;
   }
+
   a {
     flex-direction: column;
   }
 }
 
-.product-result{
+.product-result {
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 10px;
-  img{
+
+  img {
     width: 100%;
     max-width: 350px;
     align-self: center;
   }
+
   a {
     flex-direction: column;
   }
@@ -313,13 +333,15 @@ nav button {
   grid-column: 1 / -1;
   align-items: center;
   padding: 5px 20px 5px 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
   background-color: #f0f0f0;
+
   h2 {
     font-family: $bold-font;
     font-size: 17px;
     margin-right: 5px;
   }
+
   p {
     font-size: 12px;
     color: $text-color;
@@ -331,6 +353,7 @@ nav button {
   align-items: center;
   font-size: 20px;
   font-family: $bold-font;
+
   button {
     font-size: 15px;
   }
@@ -348,10 +371,12 @@ nav button {
   font-family: $normal-font;
   font-size: 10px;
   color: $text-color;
+
   img {
     max-width: 50%;
     margin-bottom: 15px;
   }
+
   p {
     max-width: 70%;
   }
@@ -363,6 +388,7 @@ nav button {
   color: $text-color;
   font-size: 15px;
   margin: 0 15px;
+
   h4 {
     color: $website-color;
     font-size: 20px;
@@ -398,11 +424,12 @@ nav button {
   border-bottom: 1px solid $text-color;
 }
 
-.parameter{
+.parameter {
   margin: 10px 0;
   justify-content: space-between;
   font-family: $bold-font;
   font-size: 20px;
+
   h4 {
     color: $website-color;
   }
@@ -413,12 +440,13 @@ nav button {
   margin: 0 15px;
 }
 
-.copyright-text{
+.copyright-text {
   font-family: $light-font;
   color: $text-color;
   font-size: 12px;
   justify-content: center;
   text-align: center;
+
   p {
     max-width: 70vw;
   }
@@ -428,14 +456,15 @@ nav button {
   justify-content: center;
   color: $text-color;
   font-size: 30px;
+
   li {
     padding: 10px;
   }
 }
 
 @media (max-width: 768px) {
-   .extra-leaf,
-   .nav-small-list-container {
+  .extra-leaf,
+  .nav-small-list-container {
     display: none;
   }
 }
@@ -444,11 +473,13 @@ nav button {
   nav {
     font-size: 16px;
   }
+
   .search-container {
     justify-content: center;
     padding-top: 95px;
     flex-direction: row;
-    *{
+
+    * {
       margin-bottom: 10px;
       max-width: 20vw;
       min-width: 20vw;
@@ -457,15 +488,17 @@ nav button {
       font-family: $light-font;
     }
   }
+
   .slider img {
     width: 200px;
   }
 
   .ad-info {
-    div{
+    div {
       padding: 8px 0;
       font-size: 14px;
     }
+
     h3 {
       font-size: 25px;
     }
@@ -486,10 +519,11 @@ nav button {
     align-items: center;
   }
 
-  .product-description-container{
+  .product-description-container {
     h3 {
       font-size: 20px;
     }
+
     p {
       font-size: 15px;
     }
@@ -501,9 +535,11 @@ nav button {
 
   .section-header {
     margin-top: 30px;
-    h2{
+
+    h2 {
       font-size: 20px;
     }
+
     p {
       font-size: 14px;
     }
@@ -513,22 +549,24 @@ nav button {
     h3 {
       font-size: 17px;
     }
+
     p {
-      font-size: 14px
+      font-size: 14px;
     }
   }
 
   .product-price-section {
     font-size: 30px;
+
     button {
       font-size: 20px;
     }
   }
 
-  .product-price{
+  .product-price {
     a {
-    font-size: 30px;
-  }
+      font-size: 30px;
+    }
   }
 
   .footer-container {
@@ -556,11 +594,11 @@ nav button {
   .bottom-footer {
     grid-column: span 4;
     flex-direction: row;
-    border-top: 1px solid #888888;
+    border-top: 1px solid #888;
     justify-content: space-between;
     align-items: center;
   }
-   
+
   .copyright-text {
     font-size: 14px;
   }
@@ -578,7 +616,25 @@ nav button {
     position: sticky;
     top: 50px;
   }
+}
 
+.nav-leaf {
+  a:hover {
+    color: $website-color;
+  }
+}
+
+#topnav a {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  width: 45px;
+  height: 40px;
 }
 
 .carousel-cell {
@@ -590,7 +646,7 @@ nav button {
 }
 
 /* cell number */
-.carousel-cell:before {
+.carousel-cell::before {
   display: block;
   text-align: center;
   content: counter(carousel-cell);
@@ -600,4 +656,4 @@ nav button {
 }
 
 /* helper */
-.flex {display: flex;}
+.flex { display: flex; }
