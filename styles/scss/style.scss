@@ -54,6 +54,16 @@ footer {
     }
 }
 
+.nav-leaf {
+  a:hover {
+    color: $website-color;
+  }
+}
+
+.messages:hover {
+  color: $website-color;
+}
+
 nav button {
   background-color: $website-color;
   border: none;
@@ -430,7 +440,7 @@ nav button {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   nav {
     font-size: 16px;
   }
