@@ -17,6 +17,10 @@ Online Shop: HTML & CSS Capstone Project is based on an online shop for electron
 
 [Live Demo Link](https://mikethreels.github.io/capstone-project/)
 
+## Video demonstrating the web-page
+
+[click here](https://www.loom.com/share/e1b86163cc344b78979410899a2f0cb4)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
