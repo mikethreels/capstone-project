@@ -295,7 +295,7 @@ nav button {
 }
 
 .product-result img {
-  width: 100%;
+  width: 40%;
   max-width: 350px;
   align-self: center;
 }
@@ -497,10 +497,18 @@ nav button {
   .product {
     border-radius: 15px;
     border: 1px solid #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .product-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-container a {
     flex-direction: row;
     align-items: center;
   }
@@ -539,6 +547,8 @@ nav button {
 
   .product-price-section {
     font-size: 30px;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .product-price-section button {
