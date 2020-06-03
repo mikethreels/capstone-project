@@ -462,6 +462,19 @@ nav button {
     border: 1px solid #383838;
   }
 
+  .product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .product-description-container h3 {
+    font-size: 20px;
+  }
+  .product-description-container p {
+    font-size: 15px;
+  }
+
   .hot-ads-header {
     font-size: 20px;
   }
@@ -488,6 +501,10 @@ nav button {
   }
   .product-price-section button {
     font-size: 20px;
+  }
+
+  .product-price a {
+    font-size: 30px;
   }
 
   .footer-container {
