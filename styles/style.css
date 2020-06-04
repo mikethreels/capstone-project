@@ -60,7 +60,7 @@ footer {
 }
 
 .nav-logo {
-  width: 120px;
+  width: 18vw;
   position: absolute;
   top: 8px;
   left: 5px;
@@ -267,6 +267,8 @@ nav button {
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .product img {
   max-width: 100%;
@@ -340,7 +342,7 @@ nav button {
 .product-price-result a {
   background-color: #d35266;
   border-radius: 5px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .website-description {
@@ -459,7 +461,7 @@ nav button {
   }
 
   .navbar {
-    margin: 0px 28vw 0 21vw;
+    margin: 0 28vw 0 21vw;
   }
 
   .search-container {
@@ -540,7 +542,7 @@ nav button {
 
   .product-price-section {
     font-size: 30px;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
   .product-price-section button {
