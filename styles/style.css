@@ -212,7 +212,7 @@ nav button {
 
 .result-count {
   font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 100%;
   color: #888;
   padding: 15px;
   border-bottom: 1px solid #888;
