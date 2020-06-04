@@ -363,6 +363,15 @@ nav button {
   color: $website-color;
 }
 
+.product-price-result {
+  color: #fff;
+  a {
+    background-color: $website-color;
+    border-radius: 5px;
+    padding: 0px 20px;
+  }
+}
+
 .website-description {
   margin: 20px 0;
   flex-direction: column;
