@@ -449,6 +449,10 @@ nav button {
     max-height: 35px;
   }
 
+  .navbar {
+    margin: 0px 28vw 0 21vw;
+  }
+
   .search-container {
     justify-content: center;
     padding-top: 95px;
