@@ -1,6 +1,7 @@
 # capstone-project
 
-Online Shop: HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
+In this project, I build an online shop using HTML & CSS. the project is repsonsive, mobile view will be visible under 768px and laptop view will be visible above 768px, there are 2 pages, the first is the home page and the second is the search result page which will open after clicking the search button.
+This HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
 
 ![screenshot](./images/app-screenshot.png)
 
@@ -34,10 +35,8 @@ Explore the website
 - Just open the `index.html` file
 
 ## Commands
-- `lintcss` Checks the css for any lint errors
-- `lintcss:fix` Checks the css for any lint errors and tries to fix what it can
 
-Note: You need to do `npm install` before executing the commands above.
+- please properly use linterns to contribute
 
 ## Authors
 

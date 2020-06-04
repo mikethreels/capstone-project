@@ -23,9 +23,13 @@ function myFunction() {
 window.addEventListener("scroll", myScroll);
 
 function myScroll() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display == "block") {
+      return;
+  } else {
     document.getElementById("myLinks").style.display = "none";
     document.getElementById("collaps").style.transform = "rotate(0deg)";
     document.getElementById("collaps").style.paddingTop = "12px";
     document.getElementById("hot-ads").style.marginTop = "15px";
-    document.getElementById("filter-section").style.marginTop = "15px";
+    }
 }
