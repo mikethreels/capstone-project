@@ -31,10 +31,8 @@ Explore the website
 - Just open the `index.html` file
 
 ## Commands
-- `lintcss` Checks the css for any lint errors
-- `lintcss:fix` Checks the css for any lint errors and tries to fix what it can
 
-Note: You need to do `npm install` before executing the commands above.
+- please properly use linterns to contribute
 
 ## Authors
 

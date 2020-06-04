@@ -56,17 +56,17 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  margin: 0 20vw;
+  margin: 0 20vw 0 150px;
 }
 
 .nav-logo {
-  width: 18vw;
+  width: 25vw;
   position: absolute;
   top: 8px;
   left: 5px;
 }
 .nav-logo img {
-  max-width: 100%;
+  max-width: 150px;
 }
 
 .messages:hover {
@@ -441,8 +441,13 @@ nav button {
 
 @media (max-width: 768px) {
   .extra-leaf,
-.nav-small-list-container {
+.nav-small-list-container,
+.menu-name {
     display: none;
+  }
+
+  .nav-leaf i {
+    font-size: 20px;
   }
 }
 @media (min-width: 769px) {
