@@ -25,7 +25,7 @@
     local("helvetica_neue_bold"),
     url(../styles/fonts/HelveticaNeue-Bold.ttf) format("truetype");
   font-weight: 500;
-  font-style: bold;
+  font-style: normal;
 }
 
 $text-color: #888;
@@ -44,7 +44,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000;
+  background-color: $nav-color;
   height: 40px;
   color: $text-color;
   font-family: $normal-font;

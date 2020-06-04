@@ -5,7 +5,6 @@
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "helvetica-light";
   font-display: swap;
@@ -13,15 +12,13 @@
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "helvetica-bold";
   font-display: swap;
   src: local("helvetica_neue_bold"), url(../styles/fonts/HelveticaNeue-Bold.ttf) format("truetype");
   font-weight: 500;
-  font-style: bold;
+  font-style: normal;
 }
-
 html {
   color: #888;
 }
@@ -31,7 +28,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000;
+  background-color: #383838;
   height: 40px;
   color: #888;
   font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
@@ -68,7 +65,6 @@ footer {
   top: 12px;
   left: 5px;
 }
-
 .nav-logo img {
   max-width: 100%;
 }
@@ -103,7 +99,6 @@ nav button {
   color: #fff;
   font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
 }
-
 .name-container img {
   padding-top: 45px;
   padding-bottom: 10px;
@@ -114,7 +109,6 @@ nav button {
   padding-top: 25px;
   flex-direction: column;
 }
-
 .search-container * {
   margin-bottom: 10px;
   max-width: 80vw;
@@ -178,7 +172,6 @@ nav button {
 .slider {
   max-width: 100%;
 }
-
 .slider img {
   width: 150px;
   margin-right: 15px;
@@ -229,13 +222,11 @@ nav button {
   max-width: 70%;
   font-family: "helvetica-light", Arial, Helvetica, sans-serif;
 }
-
 .ad-info h3 {
   color: #d35266;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
   padding: 5px 0;
 }
-
 .ad-info div {
   padding: 5px 0;
   font-size: 10px;
@@ -277,12 +268,10 @@ nav button {
   background-color: #fff;
   border-radius: 10px;
 }
-
 .product img {
   max-width: 100%;
   align-self: center;
 }
-
 .product a {
   flex-direction: column;
 }
@@ -293,13 +282,11 @@ nav button {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
 .product-result img {
   width: 40%;
   max-width: 350px;
   align-self: center;
 }
-
 .product-result a {
   flex-direction: column;
 }
@@ -323,13 +310,11 @@ nav button {
   border-bottom: 1px solid #ccc;
   background-color: #f0f0f0;
 }
-
 .section-header h2 {
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
   font-size: 17px;
   margin-right: 5px;
 }
-
 .section-header p {
   font-size: 12px;
   color: #888;
@@ -341,7 +326,6 @@ nav button {
   font-size: 20px;
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
-
 .product-price-section button {
   font-size: 15px;
 }
@@ -359,12 +343,10 @@ nav button {
   font-size: 10px;
   color: #888;
 }
-
 .website-description img {
   max-width: 50%;
   margin-bottom: 15px;
 }
-
 .website-description p {
   max-width: 70%;
 }
@@ -376,7 +358,6 @@ nav button {
   font-size: 15px;
   margin: 0 15px;
 }
-
 .footer-categories h4,
 .footer-navigation h4 {
   color: #d35266;
@@ -418,7 +399,6 @@ nav button {
   font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-
 .parameter h4 {
   color: #d35266;
 }
@@ -435,7 +415,6 @@ nav button {
   justify-content: center;
   text-align: center;
 }
-
 .copyright-text p {
   max-width: 70vw;
 }
@@ -445,18 +424,16 @@ nav button {
   color: #888;
   font-size: 30px;
 }
-
 .copyright-links li {
   padding: 10px;
 }
 
 @media (max-width: 768px) {
   .extra-leaf,
-  .nav-small-list-container {
+.nav-small-list-container {
     display: none;
   }
 }
-
 @media (min-width: 769px) {
   nav {
     font-size: 16px;
@@ -467,7 +444,6 @@ nav button {
     padding-top: 95px;
     flex-direction: row;
   }
-
   .search-container * {
     margin-bottom: 10px;
     max-width: 20vw;
@@ -485,7 +461,6 @@ nav button {
     padding: 8px 0;
     font-size: 14px;
   }
-
   .ad-info h3 {
     font-size: 25px;
   }
@@ -507,7 +482,6 @@ nav button {
     flex-direction: column;
     align-items: center;
   }
-
   .product-container a {
     flex-direction: row;
     align-items: center;
@@ -516,7 +490,6 @@ nav button {
   .product-description-container h3 {
     font-size: 20px;
   }
-
   .product-description-container p {
     font-size: 15px;
   }
@@ -528,11 +501,9 @@ nav button {
   .section-header {
     margin-top: 30px;
   }
-
   .section-header h2 {
     font-size: 20px;
   }
-
   .section-header p {
     font-size: 14px;
   }
@@ -540,7 +511,6 @@ nav button {
   .product a h3 {
     font-size: 17px;
   }
-
   .product a p {
     font-size: 14px;
   }
@@ -550,7 +520,6 @@ nav button {
     justify-content: space-around;
     width: 100%;
   }
-
   .product-price-section button {
     font-size: 20px;
   }
@@ -607,7 +576,6 @@ nav button {
     top: 50px;
   }
 }
-
 .nav-leaf a:hover {
   color: #d35266;
 }
@@ -647,3 +615,5 @@ nav button {
 .flex {
   display: flex;
 }
+
+/*# sourceMappingURL=style.css.map */
