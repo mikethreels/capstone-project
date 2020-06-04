@@ -49,7 +49,7 @@ nav {
   color: $text-color;
   font-family: $normal-font;
   max-width: 100%;
-  font-size: 10px;
+  font-size: small;
   z-index: 1;
 }
 
@@ -76,9 +76,9 @@ footer {
 }
 
 .nav-logo {
-  width: 80px;
+  width: 120px;
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 5px;
 
   img {
@@ -472,6 +472,16 @@ nav button {
 @media (min-width: 769px) {
   nav {
     font-size: 16px;
+  }
+
+  .nav-logo {
+    top: 2px;
+    img {
+      height: 4vw;
+      width: auto;
+      max-width: none;
+      max-height: 35px;
+  }
   }
 
   .search-container {
