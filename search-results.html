@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0"/>
+        <title>Mottox Search Capstone Project</title>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-logo"><a href="#"><img src="images/navbar-logo.PNG" alt=""></a></div>
+            <ul class="flex navbar">
+                <li class="nav-leaf"><a href="index.html"><i class="fas fa-home"></i><span class="menu-name">&nbsp; Home</span></a></li>
+                <li class="nav-leaf"><a href="#"><i class="fas fa-box"></i><span class="menu-name">&nbsp; Collections</span></a></li>
+                <li class="nav-leaf"><a href="#"><i class="fas fa-shopping-cart"></i><span class="menu-name">&nbsp; Purchase List</span></a></li>
+                <li class="extra-leaf"><button type="button">post an add</button></li>
+            </ul>
+            <div class="nav-small-list-container">
+                <ul class="flex nav-small-list">
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li class="user-name"><a href="#">John Doe</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="flex">
+            <div id="topnav">
+                <div id="myLinks">
+                    <div class="name-container flex">
+                        <img src="images/website-name.PNG" alt="Mottox">
+                        <h1>Search around 150,000 articles waiting to be bought!</h1>
+                    </div>
+                    <div>
+                        <form class="flex search-container" action="search-results.html">
+                            <select class="header-drop-down" name="category-selector" id="category">
+                                <option value="all-categories">All Categories</option>
+                                <option value="electronics" selected>Electronics</option>
+                                <option value="engine-parts">Engine Parts</option>
+                                <option value="liquids">Liquids</option>
+                                <option value="wheels">Wheels</option>
+                            </select>
+                            <input class="header-input-text" type="text" placeholder="&nbsp; Sparkplug">
+                            <input class="header-input-text" type="text" placeholder="&nbsp; Germany">
+                            <input class="submit-button" type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" onscroll="scroll">
+                    <i id="collaps" class="fas fa-caret-down"></i>
+                </a>
+            </div>
+        </header>
+        <main class="filter-grid" id="hot-ads">
+            <section  class="filter-container">
+                <div class="filter-section">
+                    <div class="state-filter">
+                        <form action="filter" class="state-checkbox-filter flex">
+                            <div class="new-checkbox-container">
+                                <input type="checkbox" class="new-checkbox" id="new">
+                                <label class="new-checkbox" for="new">New</label>
+                            </div>
+                            <div class="used-checkbox-container">
+                                <input type="checkbox" class="used-checkbox" id="used">
+                                <label class="used-checkbox" for="used">Used</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="brand-filter">
+                        <h3>Brand</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="ngk-checkbox-container">
+                                <input type="checkbox" class="ngk-checkbox" id="ngk">
+                                <label class="ngk-checkbox" for="ngk">NGK</label>
+                            </div>
+                            <div class="bosch-checkbox-container">
+                                <input type="checkbox" class="bosch-checkbox" id="bosch">
+                                <label class="bosch-checkbox" for="bosch">Bosch</label>
+                            </div>
+                            <div class="denso-checkbox-container">
+                                <input type="checkbox" class="denso-checkbox" id="denso">
+                                <label class="denso-checkbox" for="denso">Denso</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="price-filter">
+                        <h3>Price Range</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="ten-checkbox-container">
+                                <input type="checkbox" class="ten-checkbox" id="ten">
+                                <label class="ten-checkbox" for="ten">10$ - 20$</label>
+                            </div>
+                            <div class="twenty-checkbox-container">
+                                <input type="checkbox" class="twenty-checkbox" id="twenty">
+                                <label class="bosch-checkbox" for="twenty">20$ - 30$</label>
+                            </div>
+                            <div class="thirdy-checkbox-container">
+                                <input type="checkbox" class="thirdy-checkbox" id="thirdy">
+                                <label class="thirdy-checkbox" for="thirdy">30$ - 40$</label>
+                            </div>
+                            <div class="forty-checkbox-container">
+                                <input type="checkbox" class="forty-checkbox" id="forty">
+                                <label class="forty-checkbox" for="forty">40$+</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="delivery-filter">
+                        <h3>Delivery Method</h3>
+                        <form action="filter" class="brand-checkbox-filter">
+                            <div class="courier-checkbox-container">
+                                <input type="checkbox" class="courier-checkbox" id="courier">
+                                <label class="courier-checkbox" for="courier">Courier</label>
+                            </div>
+                            <div class="mail-checkbox-container">
+                                <input type="checkbox" class="mail-checkbox" id="mail">
+                                <label class="mail-checkbox" for="mail">Mail</label>
+                            </div>
+                            <div class="pickup-checkbox-container">
+                                <input type="checkbox" class="pickup-checkbox" id="pickup">
+                                <label class="pickup-checkbox" for="pickup">Pick-up</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="product-result-section">
+                <div class="result-count">
+                    <span><b>5</b> results for <b>"Sparkplug"</b> search in <b>France</b> in the Category <b>Electronics</b></span>
+                </div>
+                <div class="product-result product-container">
+                    <a class="flex" href="#">
+                        <img src="images/spark-plug.jpg" alt="spark plug">
+                        <div class="product-description-container">
+                            <h3>NGK Spark Plugs - Iridium IX</h3>
+                            <p class="product-state">New</p>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
+                            <p class="product-location"><b>From</b> San Fransisco California</p>
+                        </div>
+                    </a>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price-result"><a href="#">$25</a></p>
+                        </div>
+                </div>
+                <div class="product-result product-container">
+                    <a class="flex" href="#">
+                        <img src="images/accel_u_groove_spark_plugs_for_harley_twin_cam_and_sportster19862014_750x750.jpg" alt="spark plug">
+                        <div class="product-description-container">
+                            <h3>Accel U-Groove Spark Plugs</h3>
+                            <p class="product-state">New</p>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
+                            <p class="product-location"><b>From</b> San Fransisco California</p>
+                        </div>
+                    </a>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price-result"><a href="#">$50</a></p>
+                        </div>
+                </div>
+
+                <div class="product-result product-container">
+                    <a class="flex" href="#">
+                        <img src="images/motion_pro_pro_plug_socket_750x750.jpg" alt="spark plug">
+                        <div class="product-description-container">
+                            <h3>Motion Pro Pro Plug Socket</h3>
+                            <p class="product-state">New</p>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
+                            <p class="product-location"><b>From</b> San Fransisco California</p>
+                        </div>
+                    </a>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price-result"><a href="#">$15</a></p>
+                        </div>
+                </div>
+                <div class="product-result product-container">
+                    <a class="flex" href="#">
+                        <img src="images/sumax8mm_spark_plug_wires_for_harley_fxr19841999_750x750.jpg" alt="spark plug">
+                        <div class="product-description-container">
+                            <h3>Sumax 8mm Spark Plug Wires</h3>
+                            <p class="product-state">New</p>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
+                            <p class="product-location"><b>From</b> San Fransisco California</p>
+                        </div>
+                    </a>
+                        <div class="product-price-section flex">
+                            <button type="button"><b>+</b></button>
+                            <p class="product-price-result"><a href="#">$50</a></p>
+                        </div>
+                </div>
+                <div class="product-result product-container">
+                    <a class="flex" href="#">
+                        <img src="images/ngk_spark_plugs_standard_rollover.jpg" alt="spark plug">
+                        <div class="product-description-container">
+                            <h3>NGK Spark Plugs - Standard</h3>
+                            <p class="product-state">New</p>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget fermentum lorem.</p>
+                            <p class="product-location"><b>From</b> San Fransisco California</p>
+                        </div>
+                    </a>
+                    <div class="product-price-section flex">
+                        <button type="button"><b>+</b></button>
+                        <p class="product-price-result"><a href="#">$25</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="website-description flex">
+                    <img src="images/footer-logo.PNG" alt="logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                </div>
+                <div class="footer-categories">
+                    <h4>Categories</h4>
+                    <div class="footer-category-lists">
+                        <ul>
+                            <li><a href="#">Rims</a></li>
+                            <li><a href="#">Tires</a></li>
+                            <li><a href="#">Lights</a></li>
+                            <li><a href="#">Oils</a></li>
+                            <li><a href="#">Handle-bars</a></li>
+                            <li><a href="#">Chains</a></li>
+                            <li><a href="#">Breaks</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Exhausts</a></li>
+                            <li><a href="#">Mirrors</a></li>
+                            <li><a href="#">Shock Absorbers</a></li>
+                            <li><a href="#">Windscreens</a></li>
+                            <li><a href="#">Seats</a></li>
+                            <li><a href="#">Pegs</a></li>
+                            <li><a href="#">Protection</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-navigation">
+                    <h4>Navigation</h4>
+                    <div class="footer-navigation-lists">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="parameter-container">
+                    <div class="parameter flex">
+                        <h4>Country</h4>
+                        <select class="footer-drop-down" name="country-selector">
+                            <option value="Zwitserland" selected>Zwitserland</option>
+                            <option value="Spain">Spain</option>
+                            <option value="United-Kingdom">United-Kingdom</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                        </select>
+                    </div>
+                    <div class="parameter flex">
+                        <h4>Language</h4>
+                        <select class="footer-drop-down flex" name="Language-selector">
+                            <option value="English" selected>English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="German">German</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                    <div class="parameter flex">
+                        <h4>Currency</h4>
+                        <select class="footer-drop-down" name="Currency-selector">
+                            <option value="Dollar" selected>US Dollar</option>
+                            <option value="Euro">Euro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bottom-footer flex">
+                    <div class="copyright-text flex">
+                        <p>
+                            Copyright© 2015 Zattix.com. All Rights Reserved. Designed by
+                            Mohammed Awad.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="copyright-links flex">
+                          <li>
+                            <a href="#"><i class="fab fa-yahoo"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

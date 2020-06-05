@@ -1,0 +1,25 @@
+{
+  "name": "heatmap",
+  "version": "1.0.0",
+  "description": "Heatmap of Smashing Magazine",
+  "main": "stylelint.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "scripts": {
+    "lintcss": "stylelint assets/css",
+    "lintcss:fix": "stylelint --fix assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdfPizarro/heatmap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdfPizarro/heatmap/issues"
+  },
+  "homepage": "https://github.com/AdfPizarro/heatmap#readme"
+}
